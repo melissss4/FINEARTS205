@@ -19,6 +19,8 @@ In this workshop I wanted to try to have shapes generated randomly and move each
 
 I probably would have been able to shorten my code by taking out all of the: let x+= let Y= lines, by turning them into one of the lines of code shown in the workshop. But I could not find a way to do this without P5.js coming up with a syntax error. 
 ![Screen Shot 2025-01-09 at 7 47 44 PM](https://github.com/user-attachments/assets/64863d0d-9777-4fa9-be45-bdba2ed02cba)
+
+
 I will need to work on this in my next workshop task. 
 
 
