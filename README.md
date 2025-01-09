@@ -17,5 +17,6 @@ Definition Learnt: Local variables are codes that can only be used inside the fu
 In this workshop I wanted to try to have shapes generated randomly and move each time so I took inspiration from the workshop and had my code resemble gold stars on a twilight blue sky. I had a lot of trouble finding the way to create a star shape, and was unable to find a star shape that I liked in the P5.js database, so instead I chose to just make the stars round circles as they resembled the stars better than some of the other prism like shapes on the shape library. I also did not want an outline on my shapes so I made sure to use the noStroke () option. I probably would have been able to shorten my code by taking out all of the: let x+= let Y= lines, by turning them into one of the lines of code shown in the workshop. But I could not find a way to do this without P5.js coming up with a syntax error. I will need to work on this in my next workshop task. 
 
 
+
 ## workshop 2
 
