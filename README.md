@@ -1,10 +1,15 @@
 # FINEARTS205
 ## workshop 0
+Current Sketch: https://editor.p5js.org/melisssa/full/DW77RT8X7 
 
-objective: 
+Notes:
+From workshop:
 Keep code as simplified and short as possible
+To keep code in the save, but not have it working use: control /
 
+From coding my project:
 Using the p5.js primitive shapes, I experimented with the square and worked on changing the colour, changing the background, getting it to move and getting it to follow the mouse. Having 0 experience coding, I was able to see that this wasn’t as daunting as I expected. This is the code I used to create the shape, colour it, and have it follow my mouse. 
+ 
 
 
 let x = 0 ;
@@ -41,11 +46,10 @@ function draw() {
   x = x + 3; // x increases by 3 each frame
 }
 
-Current code: https://editor.p5js.org/melisssa/full/DW77RT8X7 
 
 
 ## workshop 1
-Current code: https://editor.p5js.org/melisssa/full/3EK7JGzph 
+Current Sketch: https://editor.p5js.org/melisssa/full/3EK7JGzph 
 
 Definition Learnt: Local variables are codes that can only be used inside the function.
 
@@ -69,58 +73,8 @@ Objective: To have things showing up on screen after the mouse is pressed/ to us
 In this code, since I am very new to coding, I wanted to make sure I was able to understand what each bit of code was for, so that I do not get confused with all the unfamiliar script on the screen; to familiarise myself with the functions of the code I made notes next to the different parts of the code, this was also done in preparation for our tasks next week. 
 Again, sticking to the star in the night looking sketch I didn’t want to start my code from scratch, so instead I tried to incorporate the etTimeout and setInterval functions into my pre-existing code. To do this I followed the given structure, and adapted it to the pre-existing code, making sure to leave notes in the code as I went along, so that I did not confuse myself. I decided to keep the interval time of 1000ms (one second) so that the stars looked like they were twinkling. If I wanted to make the stars a little slower in repopulating, I could have raised the interval time, but I was happy with where it was at. I think there is probably a way to shorten the code a little bit, as I think the amount of lines I have is a little but too much for the simplistic nature of the sketch, so my focus going into my next sketch would be to try and make the code simpler. I think because I am so new to coding that this will come with time and as I gain more experience. 
 
-Current code:
 
-let counter = 0;
-let countInterval;
-function setup() {
-  createCanvas(400, 400);
-  noStroke();
-  background(0, 0, 120); // Set background to dark blue
-  let numStars = 100; // Number of stars to create
-
-  for (let i = 0; i < numStars; i++) {
-    let x = random(width);
-    let y = random(height);
-    let size = random(3, 8); // Random sizes for each star
-    drawStar(x, y, size);
-  }
-  // Start the timed interval to draw more stars at a regular interval
-  countInterval = setInterval(makeStar, 1000); // Make a star every second
-}
-
-// Function to draw a star
-function drawStar(x, y, size) {
-  fill(255, 223, 0); // Gold color
-  ellipse(x, y, size, size); // Draw a circle for the star
-}
-// Function to draw a new star at a random location
-function makeStar() {
-  let x = random(width);
-  let y = random(height);
-  let size = random(3, 8);
-  drawStar(x, y, size);
 
   
  
-  counter++; // Increment the counter after drawing a star
-  if (counter >= 5) { // Stop after 5 stars are drawn
-    clearInterval(countInterval);
-    counter = 0; // Reset counter
-  }
-}
-// Added a mouse pad function as well, so that when mouse is pressed, the randomised background will reset to another random spacing
-function mousePressed() {
-  counter = 0;
-  background(0, 0, 120); // Reset background to dark blue
-  for (let i = 0; i < 100; i++) { // Redraw the initial set of stars
-    let x = random(width);
-    let y = random(height);
-    let size = random(3, 8);
-    drawStar(x, y, size);
-  }
-  // Restart the interval to draw stars like in the workshop example
-  countInterval = setInterval(makeStar, 1000);
-}
-
-
+ 
